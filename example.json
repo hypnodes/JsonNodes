@@ -1,3 +1,22 @@
-{
-  "zScore": 1.96
-}
+[
+  {
+    "name": "Item 1",
+    "value": 10.5,
+    "category": "A"
+  },
+  {
+    "name": "Item 2",
+    "value": 20.75,
+    "category": "B"
+  },
+  {
+    "name": "Item 3",
+    "value": 15.3,
+    "category": "A"
+  },
+  {
+    "name": "Item 4",
+    "value": 30.0,
+    "category": "C"
+  }
+]
