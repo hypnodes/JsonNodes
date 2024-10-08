@@ -1,7 +1,7 @@
-from .image_selector_node import ImageSelector
+from .json_key_selector import JsonKeySelector
 
 NODE_CLASS_MAPPINGS = {
-    "Image Selector" : ImageSelector,
+  "Json Key Selector" : JsonKeySelector,
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS']
