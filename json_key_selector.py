@@ -2,26 +2,26 @@ import json
 
 class JsonKeySelector:
     CATEGORY = "json"
-    RETURN_TYPES = ("FLOAT", "INT", "STRING",)
-    RETURN_NAMES = ("float","int","string" )
+    RETURN_TYPES = ("JSON", "FLOAT", "INT", "STRING",)
+    RETURN_NAMES = ("json","float","int","string" )
     FUNCTION = "select_key"
 
     @classmethod
     def INPUT_TYPES(s):
         return {
             "required": {
-               "json_data": (("JSON"),),
+               "json": (("JSON"),),
                "key": ("STRING",),
             },
         }
 
-    def select_key(self, json_data, key):
-        print(f"select_key: {json_data}, {json_data[key]}")
-        value = json_data[key]
-        if isinstance(value, float):
-            return (value, int(value), str(value))
-        if isinstance(value, int):
-            return (float(value), value, str(value) )
-        if isinstance(value, str):
-            return (0, 0, value)
-        return (0, 0, "")
+    def select_key(self, json, key):
+        print(f"select_key: {json}, {json[key]}")
+        value = json[key]
+        if isinstance(value, dict): return (value, None, None, None)
+        if isinstance(value, list): return (None, None, None, value)
+        if isinstance(value, str): return (None,None,None,value)
+        if isinstance(value, float): return (None, value, int(value), str(value))
+        if isinstance(value, int): return (None, float(value), value, str(value))
+        print("JSON selector: wtf is this?", value)
+        return (None, None, None, None)

@@ -2,8 +2,8 @@ import json
 
 class JsonIndexSelector:
     CATEGORY = "json"
-    RETURN_TYPES = ("JSON",)
-    RETURN_NAMES = ("json_data",)
+    RETURN_TYPES = ("JSON", "FLOAT", "INT", "STRING")
+    RETURN_NAMES = ("json", "float", "int", "string" )
     FUNCTION = "select_index"
 
     @classmethod
@@ -20,4 +20,10 @@ class JsonIndexSelector:
         if index >= len(json_data):
             raise IndexError(f"Array index {index} is out of range. The array has {len(json_data)} elements.")
         value = json_data[index]
-        return (value,)
+        if isinstance(value, dict):  return (value, None, None, None)
+        if isinstance(value, list):  return (value, None, None, None)
+        if isinstance(value, float): return (None, value, int(value), str(value))
+        if isinstance(value, int): return (None, float(value), value, str(value))
+        if isinstance(value, str): return (None, None, None, value)
+        print("JSON selector: wtf is this?", value)
+        return (None, None, None, None)
