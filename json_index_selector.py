@@ -16,8 +16,8 @@ class JsonIndexSelector:
         }
 
     def select_index(self, json_data, index):
-        if index >= len(json_data):
-            raise IndexError(f"Array index {index} is out of range. The array has {len(json_data)} elements.")
+        # get the index mod the length of the json_data
+        index = index % len(json_data)
         value = json_data[index]
         length = len(value) if isinstance(value, (list, str)) else None
         if isinstance(value, dict):  return (value, None, None, None, None)

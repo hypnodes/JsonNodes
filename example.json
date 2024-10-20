@@ -1,22 +1,82 @@
 [
   {
-    "name": "Item 1",
-    "value": 10.5,
-    "category": "A"
+    "scv": 0.78,
+    "atr": 0.71,
+    "clr": 0.58,
+    "qbs": 0.12,
+    "sin_val": 0.50,
+    "cos_val": 0.87
   },
   {
-    "name": "Item 2",
-    "value": 20.75,
-    "category": "B"
+    "scv": 0.14,
+    "atr": 0.93,
+    "clr": 0.47,
+    "qbs": 0.67,
+    "sin_val": 0.71,
+    "cos_val": 0.71
   },
   {
-    "name": "Item 3",
-    "value": 15.3,
-    "category": "A"
+    "scv": 0.88,
+    "atr": 0.24,
+    "clr": 0.64,
+    "qbs": 0.43,
+    "sin_val": 0.87,
+    "cos_val": 0.50
   },
   {
-    "name": "Item 4",
-    "value": 30.0,
-    "category": "C"
+    "scv": 0.37,
+    "atr": 0.29,
+    "clr": 0.95,
+    "qbs": 0.21,
+    "sin_val": 0.00,
+    "cos_val": 1.00
+  },
+  {
+    "scv": 0.19,
+    "atr": 0.67,
+    "clr": 0.91,
+    "qbs": 0.05,
+    "sin_val": 0.87,
+    "cos_val": 0.50
+  },
+  {
+    "scv": 0.48,
+    "atr": 0.89,
+    "clr": 0.38,
+    "qbs": 0.74,
+    "sin_val": 0.71,
+    "cos_val": 0.71
+  },
+  {
+    "scv": 0.63,
+    "atr": 0.19,
+    "clr": 0.11,
+    "qbs": 0.82,
+    "sin_val": 0.50,
+    "cos_val": 0.87
+  },
+  {
+    "scv": 0.32,
+    "atr": 0.23,
+    "clr": 0.65,
+    "qbs": 0.14,
+    "sin_val": 0.00,
+    "cos_val": 1.00
+  },
+  {
+    "scv": 0.41,
+    "atr": 0.59,
+    "clr": 0.76,
+    "qbs": 0.49,
+    "sin_val": 0.87,
+    "cos_val": 0.50
+  },
+  {
+    "scv": 0.25,
+    "atr": 0.42,
+    "clr": 0.29,
+    "qbs": 0.93,
+    "sin_val": 0.71,
+    "cos_val": 0.71
   }
 ]
