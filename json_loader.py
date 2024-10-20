@@ -8,7 +8,6 @@ class JsonLoader:
 
     @classmethod
     def INPUT_TYPES(s):
-        print("JsonLoader.INPUT_TYPES")
         return {
             "required": {
                 "file_path": ("STRING", {"default": ""}),
