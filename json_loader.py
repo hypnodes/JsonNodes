@@ -1,4 +1,5 @@
 import json
+import os
 
 class JsonLoader:
     CATEGORY = "json"
@@ -8,9 +9,10 @@ class JsonLoader:
 
     @classmethod
     def INPUT_TYPES(s):
+        default_path = os.path.join(os.path.dirname(__file__), "example.json")
         return {
             "required": {
-                "file_path": ("STRING", {"default": ""}),
+                "file_path": ("STRING", {"default": default_path}),
             },
         }
 
