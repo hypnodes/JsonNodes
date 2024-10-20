@@ -3,7 +3,7 @@ import json
 class JsonLoader:
     CATEGORY = "json"
     RETURN_TYPES = ("JSON", "FLOAT", "INT", "STRING", "INT")
-    RETURN_NAMES = ("json_data", "float", "int", "string" "length"  )
+    RETURN_NAMES = ("json", "float", "int", "string", "length")
     FUNCTION = "load_json"
 
     @classmethod
