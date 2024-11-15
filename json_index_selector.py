@@ -11,7 +11,7 @@ class JsonIndexSelector:
         return {
             "required": {
                "json_data": (("JSON"),),
-               "index": ("INT",),
+               "index": ("INT", {"default": 0})
             },
         }
 
